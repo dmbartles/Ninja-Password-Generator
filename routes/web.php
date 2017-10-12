@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/{length}/{weapons}', 'FormController@index');
+
+Route::get('/{secretPassword}', 'FormController@show');
