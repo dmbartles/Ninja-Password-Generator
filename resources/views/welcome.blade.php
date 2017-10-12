@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Foobooks
+                    Ninja Password Generator
                 </div>
 
                 <div class="links">
