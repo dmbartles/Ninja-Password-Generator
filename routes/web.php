@@ -10,11 +10,28 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
-Route::get('/{length}/{weapons}', 'FormController@index');
+Route::get('/master', function () {
+    return view('layouts/master');
+});
+
+Route::get('/', function () {
+    return view('main');
+});
+
+Route::get('/ninjamoves', 'FormController@index');
+
+Route::get('/env', function () {
+    dump(config('app.name'));
+    dump(config('app.env'));
+    dump(config('app.debug'));
+    dump(config('app.url'));
+});
+
 
 Route::get('/{secretPassword}', 'FormController@show');
