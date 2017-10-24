@@ -37,6 +37,10 @@ class FormController extends Controller
       .$ninjaVerb
       .$numberSpecialChars;
 
+      if (is_null($useCaps)) {
+        $ninjaPassword = 'Choose Your Destiny!!!';
+      }
+
       if ($useCaps == 'Yes') {
         $ninjaPassword = ucwords($ninjaPassword, "$ninjaSeperator");
       };
