@@ -10,21 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
 
 Route::get('/master', function () {
     return view('layouts/master');
 });
 
-Route::get('/', function () {
-    return view('main');
-});
-
-Route::get('/ninjamoves', 'FormController@index');
+Route::get('/', 'FormController@ninjaPassword');
 
 Route::get('/env', function () {
     dump(config('app.name'));
@@ -32,6 +23,3 @@ Route::get('/env', function () {
     dump(config('app.debug'));
     dump(config('app.url'));
 });
-
-
-Route::get('/{secretPassword}', 'FormController@show');
