@@ -17,7 +17,7 @@ class FormController extends Controller
 
     ## Set up validation
     $this->validate($request, [
-        'numberSpecialChars' => 'min:2|max:2'
+        'numberSpecialChars' => 'max:4'
       ]);
 
     ## Get user inputs
