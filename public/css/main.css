@@ -1,15 +1,19 @@
+
+
 html, body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: 'Gloria Hallelujah', cursive;
+    color: #000000;
+    font-family: 'Shojumaru', serif;
     font-weight: normal;
-    height: auto;
 }
 
 h2 {
   font-family: 'Shojumaru', serif;
   font-size: 35px;
   color: #000000;
+}
+
+input {
+  transform: scale(1.2);
 }
 
 .full-height {
@@ -33,7 +37,12 @@ h2 {
 }
 
 .content {
+    font-family: 'Shojumaru', serif;
     text-align: center;
+    display: block;
+    font-size: 25px;
+
+
 }
 
 .title {
@@ -73,7 +82,7 @@ h2 {
 
 
 .m-b-md {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .m-b-sm {

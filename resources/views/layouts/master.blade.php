@@ -9,7 +9,7 @@
   <link href="/css/main.css" type='text/css' rel='stylesheet'>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Shojumaru&effect=shadow-multiple" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shojumaru&effect=shadow-multiple" rel="stylesheet">
   @stack('head')
 
 </head>
@@ -18,7 +18,8 @@
 
 	<header>
     <div class="content title m-b-sm font-effect-shadow-multiple">
-        Ninja Password Generator
+        Ninja Password<br>
+				Generator
     </div>
 	</header>
 
