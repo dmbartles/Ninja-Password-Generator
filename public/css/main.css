@@ -16,7 +16,7 @@ html, body {
 
 .title {
     font-family: 'Shojumaru', serif;
-    font-size: 4em;
+    font-size: 4.2em;
     color: #000000;
     background-image: url("/img/yinyang.png");
     background-repeat: no-repeat;
@@ -28,13 +28,16 @@ html, body {
 }
 
 .subtitle {
-    font-size: 1em;
-    color: #000000;
+  font-size: 2em;
+  color: #000000;
+  background-color: #606060;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 
 .display {
-  font-size: 3em;
+  font-size: 3.1em;
   color: #ffffff;
   background-color: #000000;
   padding-left: 1em;

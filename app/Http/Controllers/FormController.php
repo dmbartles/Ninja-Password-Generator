@@ -10,15 +10,20 @@ class FormController extends Controller
   public function ninjaPassword(Request $request)
   {
 
-    ## Get JSON database of ninamoves
+    ## Get JSON database of ninja moves
     $jsonPath = database_path('ninjamoves.json');
     $ninjaMovesJson = file_get_contents($jsonPath);
     $ninjaMoves = json_decode($ninjaMovesJson, true);
 
+    ## Get JSON database of ninja quotes
+    $jsonPath = database_path('ninjaqoutes.json');
+    $ninjaQoutesJson = file_get_contents($jsonPath);
+    $ninjaQoutes = json_decode($ninjaQoutesJson, true);
+
     ## Set up validation
     $this->validate($request, [
-        'numberSpecialChars' => 'max:4'
-      ]);
+      'numberSpecialChars' => 'max:4'
+    ]);
 
     ## Get user inputs
     $ninjaSeperator = $request->input('seperator');
@@ -32,34 +37,39 @@ class FormController extends Controller
     $ninjaVerb = $ninjaMoves['verb'][rand(1,count($ninjaMoves['verb'])) - 1];
 
 
-
     $ninjaPassword = $ninjaAdverb
-      .$ninjaSeperator
-      .$ninjaNoun
-      .$ninjaSeperator
-      .$ninjaBodypart
-      .$ninjaSeperator
-      .$ninjaVerb
-      .$numberSpecialChars;
+    .$ninjaSeperator
+    .$ninjaNoun
+    .$ninjaSeperator
+    .$ninjaBodypart
+    .$ninjaSeperator
+    .$ninjaVerb
+    .$numberSpecialChars;
 
-      if (is_null($request->input('_token'))) {
-        $ninjaPassword = 'Choose Your Destiny!!!';
-      }
+    $ninjaQoute = $ninjaQoutes['play'][rand(1,count($ninjaQoutes['play'])) - 1];
 
-      if (is_null($request->input('useCaps'))) {
-        $useCaps = 'Yes';
-      }
+    if (is_null($request->input('_token'))) {
+      $ninjaPassword = 'Choose Your Destiny!!!';
+      $ninjaQoute = $ninjaQoutes['start'][rand(1,count($ninjaQoutes['start'])) - 1];
+    }
 
-      if ($useCaps == 'Yes') {
-        $ninjaPassword = ucwords($ninjaPassword, "$ninjaSeperator");
-      };
 
-      return view('main')->with(['ninjaPassword' => $ninjaPassword,
-                                'ninjaSeperator' =>$ninjaSeperator,
-                                'numberSpecialChars' =>$numberSpecialChars,
-                                'useCaps' =>$useCaps,
-                               ]);
-  }
+
+    if (is_null($request->input('useCaps'))) {
+      $useCaps = 'Yes';
+    }
+
+    if ($useCaps == 'Yes') {
+      $ninjaPassword = ucwords($ninjaPassword, "$ninjaSeperator");
+    };
+
+    return view('main')->with(['ninjaPassword' => $ninjaPassword,
+    'ninjaSeperator' =>$ninjaSeperator,
+    'numberSpecialChars' =>$numberSpecialChars,
+    'useCaps' =>$useCaps,
+    'ninjaQoute' => $ninjaQoute
+  ]);
+}
 
 
 }
