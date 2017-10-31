@@ -4,68 +4,68 @@ html, body {
     color: #000000;
     font-family: 'Shojumaru', serif;
     font-weight: normal;
-}
-
-h2 {
-  font-family: 'Shojumaru', serif;
-  font-size: 35px;
-  color: #000000;
-}
-
-input {
-  transform: scale(1.2);
-}
-
-.full-height {
-    height: 100vh;
-}
-
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.position-ref {
-    position: relative;
-}
-
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-
-.content {
-    font-family: 'Shojumaru', serif;
+/*
+    background-image: url("/img/yinyang.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #3f0000;*/
     text-align: center;
     display: block;
-    font-size: 25px;
-
-
 }
 
 .title {
     font-family: 'Shojumaru', serif;
-    font-size: 75px;
+    font-size: 4em;
     color: #000000;
-}
-
-.display {
-  font-size: 50px;
-  color: #000000;
+    background-image: url("/img/yinyang.png");
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-size: 260px 260px;
+    background-color: #ffffff;
+    padding: .7em;
 }
 
 .subtitle {
-    font-size: 30px;
+    font-size: 1em;
     color: #000000;
 }
 
 
+.display {
+  font-size: 3em;
+  color: #ffffff;
+  background-color: #000000;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+.content {
+    font-family: 'Shojumaru', serif;
+    font-size: 2.2em;
+    vertical-align: middle;
+    text-shadow: 4px 4px 4px #aaa;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    padding-left: 7em;
+    padding-right: 7em;
+
+}
+
+select, input {
+  font-family: 'Shojumaru', serif;
+  font-size: .9em;
+  padding: .1em;
+  text-align: center;
+}
+
+input[type='radio'] { transform: scale(2.2); }
+
 .links > a {
     color: #636b6f;
-    padding: 0 25px;
-    font-size: 20px;
+    padding: 1em;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
@@ -73,18 +73,34 @@ input {
 }
 
 .footer {
-  font-size: 20px;
-  color: #000000;
-  position: fixed;
+  font-size: 1em;
   bottom: 0%;
   width: 100%;
+  position: fixed;
 }
 
 
+
+.m-t-xl {
+    margin-top: 2em;
+}
+
+.m-t-lg {
+    margin-top: 1em;
+}
+
+.m-t-md {
+    margin-top: .5em;
+}
+
+.m-b-xl {
+    margin-bottom: 2em;
+}
+
 .m-b-md {
-    margin-bottom: 10px;
+    margin-bottom: .5em;
 }
 
 .m-b-sm {
-    margin-bottom: 5px;
+    margin-bottom: .1em;
 }

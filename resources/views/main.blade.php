@@ -2,23 +2,21 @@
 
 @section('content')
 
-  <div class="content m-b-md">
+  <div class="display">
+    {{$ninjaPassword}}
+  </div>
 
-    <h2>{{ $ninjaPassword }}</h2>
-
+  <div class="content">
     <form method='GET' action=''>
       {{ csrf_field() }}
-      <label for='numberSpecialChars'>Add Numbers and Special Characters</label>
+      <label for='numberSpecialChars'>Add Letters, Numbers and Special Characters</label>
+      <br>
       <input type='text' name='numberSpecialChars' id='numberSpecialChars' maxlength='4' size='4' value='{{ $numberSpecialChars }}'>
 
       <br>
 
-      <label><input type='radio' name='useCaps' value='Yes' checked='Checked'> Capitalize First Letter </label>
-      <label><input type='radio' name='useCaps' value='No' > All Lowercase Letters </label>
-
-      <br>
-
       <label for='seperator'>Choose a seperator</label>
+      <br>
       <select name="seperator">
         <option value="-">Dash -</option>
         <option value="_">Underscore _</option>
@@ -29,6 +27,13 @@
         <option value="%">Percent %</option>
         <option value="@">At @</option>
       </select>
+
+      <br>
+
+
+      <label><input type='radio' name='useCaps' value='Yes' checked='Checked'> Capitalize First Letter </label>
+      <br>
+      <label><input type='radio' name='useCaps' value='No' > All Lowercase Letters </label>
 
       <br>
 

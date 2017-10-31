@@ -10,14 +10,17 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Shojumaru&effect=shadow-multiple" rel="stylesheet">
-  @stack('head')
+
+	<link rel="icon" type="image/png" href="/img/favicon.png">
+
+	@stack('head')
 
 </head>
 
 <body>
 
 	<header>
-    <div class="content title m-b-sm font-effect-shadow-multiple">
+    <div class="title font-effect-shadow-multiple">
         Ninja Password<br>
 				Generator
     </div>
@@ -28,7 +31,7 @@
 	</section>
 
 	<footer>
-    <div class="content footer m-b-sm">
+    <div class="content footer">
 		    Kodiak Jetpack&copy; {{ date('Y') }}
     </div>
 	</footer>

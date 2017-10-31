@@ -8,7 +8,7 @@
 		"hyper",
 		"jumping",
 		"twisting",
-		"disasterous",
+		"disastrous",
 		"blinding",
 		"painfull",
 		"screaming",
@@ -49,7 +49,7 @@
 		"excruciating",
 		"crying",
 		"embarrassing",
-		"humilating",
+		"humiliating",
 		"silent",
 		"quiet",
 		"heavy",
@@ -61,7 +61,20 @@
 		"cold",
 		"mute",
 		"deafening",
-		"roaring"
+		"roaring",
+		"drunken",
+		"fast",
+		"turbo",
+		"mysterious",
+		"masterful",
+		"volcanic",
+		"black",
+		"strange",
+		"missing",
+		"hidden",
+		"beijing",
+		"forbidden",
+		"sinister"
 
 	],
 
@@ -89,14 +102,14 @@
 		"blizzard",
 		"storm",
 		"landslide",
-		"shoalin",
+		"shaolin",
 		"triangle",
 		"star",
 		"square",
 		"warrior",
 		"cannon",
 		"moon",
-		"asteriod",
+		"asteroid",
 		"comet",
 		"planet",
 		"flower",
@@ -115,7 +128,10 @@
 		"falcon",
 		"panther",
 		"torture",
-		"wind"
+		"wind",
+		"atomic",
+		"avalanche",
+		"volcano"
 
 
 	],
@@ -163,9 +179,10 @@
 		"hair",
 		"skin",
 		"eyelid",
-		"cheek"
-
-
+		"cheek",
+		"nipple",
+		"vertebre",
+		"shinobi"
 	],
 
 	"verb": [
@@ -196,18 +213,23 @@
 		"blast",
 		"destruction",
 		"devistation",
-		"embarrasment",
+		"embarrassment",
 		"launch",
 		"roundhouse",
 		"jumpkick",
 		"stomp",
 		"strike",
-		"impale",
+		"impalement",
 		"swat",
 		"shank",
 		"burn",
 		"stab",
 		"snap",
-		"crush"
+		"crush",
+		"annihilation",
+		"pound",
+		"combo",
+		"combination",
+		"arc"
 		]
 }
