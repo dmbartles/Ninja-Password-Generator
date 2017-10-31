@@ -37,8 +37,8 @@ html, body {
   font-size: 3em;
   color: #ffffff;
   background-color: #000000;
-  padding-left: 7em;
-  padding-right: 7em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .content {
@@ -48,8 +48,8 @@ html, body {
     text-shadow: 4px 4px 4px #aaa;
     padding-top: .6em;
     padding-bottom: .6em;
-    padding-left: 7em;
-    padding-right: 7em;
+    padding-left: 1em;
+    padding-right: 1em;
 
 }
 
