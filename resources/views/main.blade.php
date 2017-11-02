@@ -10,10 +10,8 @@
   {{$ninjaQoute}}
 </div>
 
-
-
 <div class="content">
-  <form method='GET' action=''>
+  <form method='GET' action='/'>
     {{ csrf_field() }}
     <label for='numberSpecialChars'>Add Letters, Numbers and Special Characters</label>
     <br>
@@ -23,7 +21,7 @@
 
     <label for='seperator'>Choose a seperator</label>
     <br>
-    <select name="seperator">
+    <select name='seperator'>
       <option value="-">Dash -</option>
       <option value="_">Underscore _</option>
       <option value=".">Dot .</option>
