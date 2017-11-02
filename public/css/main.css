@@ -28,11 +28,10 @@ html, body {
 }
 
 .subtitle {
-  font-size: 1em;
-  color: #000000;
+  font-size: 1.5em;
+  color: #830303;
   background-color: #606060;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: .1em;
 }
 
 

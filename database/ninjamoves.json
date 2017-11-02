@@ -1,6 +1,7 @@
 {
 	"adverb": [
 		"flaming",
+		"ridiculous",
 		"burning",
 		"swinging",
 		"exploding",
@@ -74,7 +75,8 @@
 		"hidden",
 		"beijing",
 		"forbidden",
-		"sinister"
+		"sinister",
+		"shinobi"
 
 	],
 
@@ -131,7 +133,9 @@
 		"wind",
 		"atomic",
 		"avalanche",
-		"volcano"
+		"volcano",
+		"clown",
+		"diamond"
 
 
 	],
@@ -182,7 +186,8 @@
 		"cheek",
 		"nipple",
 		"vertebre",
-		"shinobi"
+		"vein",
+		"teeth"
 	],
 
 	"verb": [
@@ -231,6 +236,11 @@
 		"combo",
 		"combination",
 		"hook",
-		"hooks"
+		"hooks",
+		"toss",
+		"drop",
+		"bites",
+		"chomp",
+		"pinch"
 		]
 }
