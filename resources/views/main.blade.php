@@ -21,7 +21,7 @@
 
     <label for='seperator'>Choose a seperator</label>
     <br>
-    <select name='seperator'>
+    <select name='seperator' id='seperator'>
       <option value="-">Dash -</option>
       <option value="_">Underscore _</option>
       <option value=".">Dot .</option>
